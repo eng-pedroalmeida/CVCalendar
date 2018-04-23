@@ -78,6 +78,7 @@ private extension CVDate {
     func dateFormattedStringWithFormat(_ format: String, fromDate date: Foundation.Date) -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = format
+        formatter.locale = Locale.current
         return formatter.string(from: date)
     }
 }

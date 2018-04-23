@@ -76,7 +76,7 @@ public final class CVCalendarMenuView: UIView {
     public func createDaySymbols() {
         // Change symbols with their places if needed.
         let dateFormatter = DateFormatter()
-        dateFormatter.locale = calendar?.locale ?? Locale.current
+        dateFormatter.locale = Locale.current
         var weekdays: NSArray
 
         switch weekdaySymbolType! {
